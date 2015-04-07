@@ -1,0 +1,25 @@
+<div class="container small-container well margin-top-40">
+  <%= form_tag(author_book_path(params[:author_id], @book.id), method: :put) do %>
+    <div class="bold">
+      Title
+    </div>
+    <div class="margin-top-10">
+      <input name="title" type="text" class="form-control" value="<%= @book.title %>" />
+    </div>
+    <div class="bold margin-top-20">
+      Pages
+    </div>
+    <div class="margin-top-10">
+      <input name="pages" type="text" class="form-control" value="<%= @book.pages %>" />
+    </div>
+    <div class="bold margin-top-20">
+      Genre
+    </div>
+    <div class="margin-top-10">
+      <input name="genre" type="text" class="form-control" value="<%= @book.genre %>" />
+    </div>
+    <div class="margin-top-20 txt-center">
+      <button type="submit" class="btn btn-primary">Save Book</button>
+    </div>
+  <% end %>
+</div>
