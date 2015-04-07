@@ -1,0 +1,37 @@
+body {
+  background:url(../img/books.jpg) no-repeat;
+  background-size:cover;
+}
+
+table {
+  color:#FFF;
+  font-size:1.3em;
+}
+
+.bold {
+  font-weight:bold;
+}
+
+.margin-top-10 {
+  margin-top:10px;
+}
+
+.txt-right {
+  text-align:right;
+}
+
+.txt-center {
+  text-align:center;
+}
+
+.margin-top-40 {
+  margin-top:40px;
+}
+
+.margin-top-20 {
+  margin-top:20px;
+}
+
+.small-container {
+  max-width:600px;
+}

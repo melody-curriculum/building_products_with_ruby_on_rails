@@ -1,0 +1,65 @@
+<div class="container margin-top-40">
+  <div>
+    <a href="#" data-target="#add-book-modal" data-toggle="modal" class="btn btn-info">Add New Book for Author</a>
+  </div>
+  <table class="table striped margin-top-20">
+    <thead>
+      <th>Title</th>
+      <th>Pages</th>
+      <th>Genre</th>
+      <th></th>
+    </thead>
+    <tbody>
+      <% %>
+      <!-- need to add some logic here -->
+        <tr>
+          <td><%=  %></td>
+          <td><%=  %></td>
+          <td><%=  %></td>
+          <td class="txt-right">
+            <a href="<%= edit_author_book_path(params[:author_id], book.id) %>" class="btn btn-primary">Edit Book</a>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<!--Add Book Modal-->
+<div id="add-book-modal" class="modal fade">
+  <%= form_tag do %>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Add New Book</h4>
+        </div>
+        <div class="modal-body">
+          <div class="bold">
+            Title
+          </div>
+          <div class="margin-top-10">
+            <input name="title" type="text" class="form-control" />
+          </div>
+          <div class="bold margin-top-20">
+            Pages
+          </div>
+          <div class="margin-top-10">
+            <input name="pages" type="text" class="form-control" />
+          </div>
+          <div class="bold margin-top-20">
+            Genre
+          </div>
+          <div class="margin-top-10">
+            <input name="genre" type="text" class="form-control" />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">Save Book</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  <% end %>
+</div><!-- /.modal -->
+<!--/Add Book Modal-->

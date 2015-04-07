@@ -1,0 +1,53 @@
+<div class="container margin-top-40">
+  <div>
+    <a href="#" data-target="#add-author-modal" data-toggle="modal" class="btn btn-info">Add New Author</a>
+  </div>
+  <table class="table striped margin-top-20">
+    <thead>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th></th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Melody</td>
+        <td>Serra</td>
+        <td class="txt-right">
+          <a href="#" class="btn btn-primary">Edit Author</a>
+          <a href="#" class="btn btn-warning">View Books</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!--Add Author Modal-->
+<div id="add-author-modal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Add New Author</h4>
+      </div>
+      <div class="modal-body">
+        <div class="bold">
+          First Name
+        </div>
+        <div class="margin-top-10">
+          <input name="first_name" type="text" class="form-control" />
+        </div>
+        <div class="bold margin-top-20">
+          Last Name
+        </div>
+        <div class="margin-top-10">
+          <input name="last_name" type="text" class="form-control" />
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Save Author</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!--/Add Author Modal-->
